@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yummy</title>
+  <link rel="icon" href="images/logo.png">
+  <!-- =========icons========= -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- =========bootstrap========= -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- =========main style========= -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="main-bg ">
+  <section id="search" class="search d-none  pt-5 ">
+    <div class="container ">
+      <div class="row g-4 ">
+        <div class="col-md-6">
+          <input type="text" placeholder="Search by Name " name="" id="byName" class="form-control  " id="">
+        </div>
+        <div class="col-md-6">
+          <input type="text" placeholder="Search by First Letter" id="byletter" name="" maxlength="1"
+            class="form-control " id="">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row dataSearch g-4 mt-3">
+
+      </div>
+    </div>
+  </section>
+  <section id="main" class="Home caragory ">
+    <div class="container  ">
+      <div class="row py-5  g-4 mainData">
+
+  
+
+
+
+
+
+      </div>
+
+    </div>
+    <aside> <!--  search, categories, area, ingredients, contact us-->
+      <div class="sidebar   z-1   bg-black">
+        <div class="sidebar-fixed d-flex flex-column justify-content-between align-items-center bg-white">
+          <img src="images/logo.png" class="w-sm mt-2" alt="">
+          <i class=" fa-solid open-close-icon fa-2x fa-align-justify"></i>
+          <i class=" fa-solid fa-close d-none fa-2x fa-align-justify"></i>
+          <div class="mb-4">
+            <i class="fa-solid fa-globe d-block"></i>
+            <i class="fa-solid fa-share-nodes"></i>
+          </div>
+        </div>
+        <div class="sidebar-content main-bg overflow-hidden d-flex flex-column justify-content-between  h-100">
+          <ul class="list-unstyled ps-3  pt-4   ">
+            <li><a href="#search">search</a></li>
+            <li><a href="#">categories</a></li>
+            <li><a href="#">area</a></li>
+            <li><a href="#">ingredients</a></li>
+            <li><a href="#contact">contact us</a></li>
+          </ul>
+          <div class="icons text-white ps-4   mb-4">
+            <i class=" fa-brands fa-facebook "></i>
+            <i class="fa-brands fa-twitter "></i>
+            <i class="fa-solid fa-globe"></i>
+            <p>Copyright Â© 2019 All Rights <br>
+              Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <div class="loading d-none z-2 d-flex align-items-center bg-black position-absolute top-0 bottom-0 start-0 end-0 justify-content-center">
+    <i class="fa-solid fa-spinner fa-spin fa-5x text-white "></i>
+  </div>
+ 
+  <section id="contact" class="contact vh-100 d-none d-flex justify-content-center align-items-center py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <input type="text" placeholder="Enter Your Name"  class="form-control " name="" id="Name">
+          <p class="alert p-2 mb-0 d-none mt-2 alert-danger">at least five letters and not allow any number</p>
+        </div>
+        <div class="col-md-6">
+          <input type="email" placeholder="Enter Your Email" class="form-control" name="" id="Email">
+          <p class="alert p-2 mb-0 d-none mt-2 alert-danger">.... example@gmail.com | org | net</p>
+
+        </div>
+        <div class="col-md-6">
+          <input type="text" placeholder="Enter Your Phone" class="form-control" name="" id="phone">
+          <p class="alert p-2 mb-0 d-none mt-2 alert-danger">must be Egypt numbers </p>
+
+        </div>
+        <div class="col-md-6">
+          <input type="number" placeholder="Enter Your Age" class="form-control" name="" id="age">
+          <p class="alert p-2 mb-0 d-none mt-2 alert-danger">accept the age from 5 to 99</p>
+
+        </div>
+        <div class="col-md-6">
+          <input type="password" placeholder="Enter Your Password" class="form-control" name="" id="Password">
+          <p class="alert p-2 mb-0 d-none mt-2 alert-danger">must be at minimum 5 character and three number </p>
+
+        </div>
+        <div class="col-md-6">
+          <input type="password" placeholder="RePassword" class="form-control" name="" id="RePassword">
+          <p class="alert p-2 mb-0 d-none mt-2 alert-danger">The password is not the same as the previous password</p>
+
+        </div>
+
+      </div>
+      <div class="button d-flex justify-content-center align-items-center">
+        <button  class="btn disabled  btn-outline-danger mt-3 m-auto" >Submit</button>
+        <button  class="btn d-none model   btn-outline-danger mt-3 m-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
+
+      </div>
+    </div>
+  </section>
+  <section>
+   <!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button> -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header  bg-success">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Success</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body bg-success">
+        <h1 class="fw-bold text-white"> Welcom </h1>
+      </div>
+      <div class="modal-footer bg-success">
+        <button type="button" class="btn btn-secondary close" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+  </section>
+  <!-- ===========jQuery========== -->
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <!-- ===========bootstrap.bundle========== -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- ===========main js========== -->
+  <script src="js/index.js"></script>
+</body>
+
+</html>

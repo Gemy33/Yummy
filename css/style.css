@@ -1,0 +1,119 @@
+a{
+    text-decoration: none;
+}
+/* =====Home====== */
+.inner .layer
+{
+    background-color: #e0d8d7a8;
+    transform: translateY(100%);
+    transition: all .7s;
+}
+.inner:hover.inner .layer{
+    transform: translateY(0%);
+
+}
+.sidebar{
+    width: 0px;
+    padding-left: 0;
+   position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: all .7s;
+}
+.sidebar ul li
+{
+    padding: 8px;
+    position: relative;
+    top: 300px;
+    left: 0px
+ 
+}
+ul
+{
+   overflow: hidden;    
+}
+.sidebar a
+{
+    text-transform: capitalize;
+
+    color: white;
+    white-space: nowrap;
+}
+.sidebar-fixed{
+    width: 65px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    padding-right: 2px;
+    bottom: 0;
+    z-index: 99;
+    color: black;
+}
+/*  */
+.w-sm
+{
+    padding-top: 15px;
+    width: 50px;
+}
+.icons{
+    white-space: nowrap;
+}
+/* =====Search=======  */
+
+.search input{
+    background-color: transparent !important;
+}
+.search input::placeholder{
+    color: rgb(65, 64, 64) !important;
+}
+.search input.form-control:focus{
+    box-shadow: rgba(13, 110, 253, 0.25) 0px -2px 5px 0.25rem;
+    --bs-body-color:white;
+}
+.layer_catagory{
+    transform:  translateY(100%);
+    transition: .5s;
+    ;
+
+}
+.caragory .inner:hover .layer_catagory{
+    transform:  translateY(0%);
+
+
+}
+.curoser{
+    cursor: pointer;
+}
+.strInstruction{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.tagsFormat{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+}
+.recipesFormat{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+}
+.main-bg{
+    background-color: #0D0D0D;
+}
+/* =======contact======= */
+.contact .container{
+    width: 60% !important;
+}
+.bg-measure{
+    background-color: #CFF4FC;
+    color: rgb(5, 81, 96)
+    ;
+    line-height:24px ;
+}
