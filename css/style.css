@@ -5,7 +5,7 @@ a{
 .inner .layer
 {
     background-color: #e0d8d7a8;
-    transform: translateY(100%);
+    transform: translateY(120%);
     transition: all .7s;
 }
 .inner:hover.inner .layer{
@@ -73,7 +73,7 @@ ul
     --bs-body-color:white;
 }
 .layer_catagory{
-    transform:  translateY(100%);
+    transform:  translateY(120%);
     transition: .5s;
     ;
 
