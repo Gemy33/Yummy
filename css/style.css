@@ -49,7 +49,12 @@ ul
     padding-right: 2px;
     bottom: 0;
     z-index: 99;
-    color: black;
+    color: black !important;
+    display: flex !important;
+    
+}
+.sidebar-fixed i{
+    cursor: pointer;
 }
 /*  */
 .w-sm
@@ -59,6 +64,31 @@ ul
 }
 .icons{
     white-space: nowrap;
+}
+
+@media (max-width:600px) {
+    .sidebar-fixed{
+      
+        background-color: transparent !important;
+        color: white !important;
+        justify-content: center !important;
+
+    }
+    .open-close-icon{
+        background-color: white !important;
+        padding: 2px;
+        color: black !important;
+        border-radius: 5px;
+    }
+    .sidebar-fixed img{
+      
+        display: none;
+
+    }
+    .two_icon{
+        display:none;
+    }
+  
 }
 /* =====Search=======  */
 
