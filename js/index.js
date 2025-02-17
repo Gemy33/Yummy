@@ -1,6 +1,6 @@
 function open_sidebar(){
       $('.sidebar').css('padding-left','px').css('width','250px');
-      $('.fa-close').toggleClass('d-none');
+      $('.faSlider').toggleClass('d-none');
       $('.open-close-icon').toggleClass('d-none');
       $('.sidebar-content li').eq(0).animate({'top':'0px','left':'0px'},450)
       $('.sidebar-content li').eq(1).animate({'top':'0px','left':'0px'},550)
@@ -12,7 +12,7 @@ function open_sidebar(){
 function close_sideber(){
    
       $('.sidebar').css('padding-left','0px').css('width','0px');
-      $('.fa-close').toggleClass('d-none');
+      $('.faSlider').toggleClass('d-none');
       $('.open-close-icon').toggleClass('d-none');
       $('.sidebar-content li').eq(0).animate({'top':'300px','left':'-50px'},850)
       $('.sidebar-content li').eq(1).animate({'top':'300px','left':'-50px'},750)
@@ -23,7 +23,7 @@ function close_sideber(){
    
 }
 $('.open-close-icon').click(open_sidebar);
-$('.fa-close').click(close_sideber);
+$('.faSlider').click(close_sideber);
 // select all links and apply the logic for it 
 $('.sidebar-content a').eq(0).click(function(){         //search 
       $('.contact').addClass('d-none');
@@ -100,10 +100,11 @@ async function GetCatagory(){
 }
 function DisplayCatagory(data)
 {
-      boxData='';
+      boxData='<h2 class="text-center text-white">Our Categories</h2>';
       for(let i=0;i<data.length;i++)
       {
             boxData+=` <div class="col-3 py-2">
+            
       <div class="inner  position-relative overflow-hidden  text-center">
         <img src="${data[i].strCategoryThumb}" class=" w-100 rounded-2" alt="">
         <div class="layer_catagory bg-white bg-opacity-75 p-1 position-absolute top-0 bottom-0 start-0 end-0" >
@@ -126,7 +127,7 @@ async function GetMales(cat){
 }
 function DisplayMales(data,selector)
 {
-      boxData='';
+      boxData='<h2 class="text-center text-white">Our Males</h2>';
       for(let i=0;i<data.length;i++)
       {
             boxData+=`<div class="col-md-3">
@@ -156,7 +157,7 @@ async function GetCountry()
 }
 function DisplayArea(data)
 {
-      boxData='';
+      boxData='<h2 class="text-center text-white">All Areas</h2>';
       for(let i=0;i<data.length;i++)
       {
             boxData+=`  <div class="col-md-3 text-white">
@@ -196,7 +197,7 @@ async function GetIngredient ()
 }
 function DisplayGradient(data)
 {
-      boxData='';
+      boxData='<h2 class="text-center text-white">Our Ingredients</h2>';
       for(let i=0;i<24;i++)
       {
             boxData+=`   <div class="col-md-3">
@@ -312,6 +313,7 @@ function getId()
             })
       }
 }
+
 function displayDetailes(data)
 {
       let detailesBox='';
@@ -338,8 +340,10 @@ function displayDetailes(data)
          
          
         </div>
+        
       `
       document.querySelector('.mainData').innerHTML=detailesBox;
+      document.querySelector('.close').classList.toggle('d-none');
 }
 // handel case Recipes 
 function Measure(response){
@@ -472,6 +476,10 @@ function bottomAction(){
      }
 }
 // when button is work
-document.querySelector('.close').addEventListener('click',function(){
+document.querySelector('.close1').addEventListener('click',function(){
+      
       location.href='../index.html';
+      // document.querySelector('.mainData').innerHTML=detailesBox;
+      // console.log(detailesBox);
+      
 })
